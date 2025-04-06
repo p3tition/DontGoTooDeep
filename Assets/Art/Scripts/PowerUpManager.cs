@@ -24,6 +24,7 @@ public class PowerUpManager : MonoBehaviour
     public void Start()
     {
         powerUpUI = FindInactiveObjectByTag("PowerUpUI");
+        powerUpUI.SetActive(false);
     }
     
     public void IncreaseSignalAccuracy()

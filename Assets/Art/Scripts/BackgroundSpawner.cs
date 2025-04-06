@@ -23,7 +23,11 @@ public class BackgroundSpawner : MonoBehaviour
         {
             Destroy(child.gameObject);
         }
+
         playerTransform = player.transform;
+        spawnHeight = 0f;
+        backgroundIndex = 0;
+
         for (int i = 0; i < backgroundPrefabs.Length; i++)
         {
             SpawnBackground(i * backgroundHeight);

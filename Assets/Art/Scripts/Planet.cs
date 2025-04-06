@@ -3,9 +3,11 @@ using UnityEngine;
 public class Planet : MonoBehaviour
 {
     private GameObject powerUpUI;
-
+    private Player player;
+    public bool isActive = true;
     void Start()
     {
+        player = FindInactiveObjectByTag("Player").GetComponent<Player>();
         powerUpUI = FindInactiveObjectByTag("PowerUpUI");
         if (powerUpUI != null)
         {
@@ -19,8 +21,11 @@ public class Planet : MonoBehaviour
 
     public void OnTriggerEnter2D(Collider2D collision)
     {
-        if (powerUpUI != null)
+        if (collision.gameObject.CompareTag("Player") && isActive)
         {
+            SoundManager.Instance.PlayPowerUpSound();
+            isActive = false;
+            player.Pause();
             powerUpUI.SetActive(true);
         }
     }

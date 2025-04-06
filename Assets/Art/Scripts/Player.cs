@@ -12,28 +12,34 @@ public class Player : MonoBehaviour
     [SerializeField] private float cameraOffset = 0.2f;
     [SerializeField] private float minXBound = -8f;
     [SerializeField] private float maxXBound = 8f;
-    
-    private int score = 0;
-    private Vector3 lastPosition;
+    [SerializeField] private GameObject shield;
 
     private Rigidbody2D rb;
-    private bool isMoving = false;
     private Camera mainCamera;
 
     public TextMeshProUGUI scoreText;
     public TextMeshProUGUI bonusScoreText;
+    public TextMeshProUGUI gameOverScoreTextUI;
     public GameObject gameOverUI;
     
     private float bonusScoreValue = 0;
     private float bonusScoreDuration = 1f;
     private float bonusScoreTimer = 0f;
-    public bool isDead = false;
-    public bool isPaused = false;
+    private float startOccuracy = 1f;
+    
+    private int score = 0;
+    private Vector3 lastPosition;
     private Vector3 spawnPosition;
     private BackgroundSpawner background;
-    private float startOccuracy = 1f;
+    
+    public bool isDead = false;
+    public bool isPaused = false;
+    private bool isMoving = false;
+    private bool isShieldActivated = false;
+    
     void Start()
     {
+        shield.SetActive(false);
         background = FindFirstObjectByType<BackgroundSpawner>();
         spawnPosition = transform.position;
         rb = GetComponent<Rigidbody2D>();
@@ -94,8 +100,6 @@ public class Player : MonoBehaviour
 
         scale.x = newScaleX;
         gameObject.transform.localScale = scale;
-
-    
     }
 
 
@@ -141,6 +145,7 @@ public class Player : MonoBehaviour
     
     public void AddBackgroundBonus()
     {
+        SoundManager.Instance.PlaySonarSound();
         float distanceMoved = Vector3.Distance(lastPosition, transform.position);
         float bonus = Mathf.Round(distanceMoved * 10/10) * 100;
         if (bonus > 0)
@@ -150,9 +155,10 @@ public class Player : MonoBehaviour
             bonusScoreTimer = 0f;
             bonusScoreText.gameObject.SetActive(true);
         }
-    }
+    }   
     public void AddBonus(int bonus)
     {
+        SoundManager.Instance.PlaySonarSound();
         bonusScoreValue = bonus;
         score += Mathf.RoundToInt(bonusScoreValue);
         bonusScoreTimer = 0f;
@@ -168,11 +174,25 @@ public class Player : MonoBehaviour
 
     public void OnTriggerEnter2D(Collider2D other)
     {
-        if(other.gameObject.GetComponent<FollowPath>() && !isPaused)
+        if (isPaused) return;
+
+        if (other.gameObject.TryGetComponent<FollowPath>(out _) || 
+            other.gameObject.TryGetComponent<Meteorite>(out _))
         {
-            PlayerDeath();
+            if (isShieldActivated)
+            {
+                Destroy(other.gameObject);
+                isShieldActivated = false;
+                shield.SetActive(false);
+                SoundManager.Instance.PlayDestroyShieldSound();
+            }
+            else
+            {
+                PlayerDeath();
+            }
         }
     }
+    
     public void PlayerDeath()
     {
         rb.linearVelocity = Vector2.zero;
@@ -181,6 +201,10 @@ public class Player : MonoBehaviour
         scoreText.gameObject.SetActive(false);
         bonusScoreText.gameObject.SetActive(false);
         gameOverUI.SetActive(true);
+        float distanceFromZero = Mathf.Abs(gameObject.transform.position.y);
+        gameOverScoreTextUI.SetText($"Your distance \nfrom Earth: {distanceFromZero:F1} km \nYour score: {score}");
+        SoundManager.Instance.StopSoundtrack();
+        SoundManager.Instance.PlayDeathSound();
     }
 
     public void Respawn()
@@ -194,6 +218,7 @@ public class Player : MonoBehaviour
         bonusScoreValue = 0;
         bonusScoreTimer = 0f;
         isDead = false;
+        SoundManager.Instance.PlayNextSoundtrack();
     }
     public void Pause()
     {
@@ -208,6 +233,8 @@ public class Player : MonoBehaviour
 
     public void ActivateShield()
     {
-        
+        Debug.Log("SHIELD ACTIVATED");
+        shield.SetActive(true);
+        isShieldActivated = true;
     }
 }
