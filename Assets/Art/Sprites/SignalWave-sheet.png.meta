@@ -1,0 +1,372 @@
+fileFormatVersion: 2
+guid: 9c8d5eb611ebcb942beaa44eebf15a4f
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 7369505993470540541
+    second: SignalWave-sheet_0
+  - first:
+      213: 754613320102848330
+    second: SignalWave-sheet_1
+  - first:
+      213: 2164104248002641104
+    second: SignalWave-sheet_2
+  - first:
+      213: 5322894312659029292
+    second: SignalWave-sheet_3
+  - first:
+      213: 3586543683386009017
+    second: SignalWave-sheet_4
+  - first:
+      213: -56748404445034002
+    second: SignalWave-sheet_5
+  - first:
+      213: -5259463862629332203
+    second: SignalWave-sheet_6
+  - first:
+      213: -256657172195656859
+    second: SignalWave-sheet_7
+  - first:
+      213: 6159805392652257276
+    second: SignalWave-sheet_8
+  - first:
+      213: -5853736775379335369
+    second: SignalWave-sheet_9
+  - first:
+      213: -9125803679409799866
+    second: SignalWave-sheet_10
+  - first:
+      213: 7125986842808672169
+    second: SignalWave-sheet_11
+  - first:
+      213: 3392681333868069607
+    second: SignalWave-sheet_12
+  - first:
+      213: 8821599145002215078
+    second: SignalWave-sheet_13
+  - first:
+      213: 2624083408758260199
+    second: SignalWave-sheet_14
+  - first:
+      213: 7247450763965771584
+    second: SignalWave-sheet_15
+  - first:
+      213: -4396853074539974025
+    second: SignalWave-sheet_16
+  - first:
+      213: -1050452140725078306
+    second: SignalWave-sheet_17
+  - first:
+      213: -7069379966661266373
+    second: SignalWave-sheet_18
+  - first:
+      213: -702709483068311956
+    second: SignalWave-sheet_19
+  - first:
+      213: -5980332436264788831
+    second: SignalWave-sheet_20
+  - first:
+      213: -3400921968998613023
+    second: SignalWave-sheet_21
+  - first:
+      213: -6729125281459009078
+    second: SignalWave-sheet_22
+  - first:
+      213: 9170009902543166162
+    second: SignalWave-sheet_23
+  - first:
+      213: 5536385257601763808
+    second: SignalWave-sheet_24
+  - first:
+      213: 7888358527340110636
+    second: SignalWave-sheet_25
+  - first:
+      213: 2049262489658115202
+    second: SignalWave-sheet_26
+  - first:
+      213: -3988737151616449259
+    second: SignalWave-sheet_27
+  - first:
+      213: -7678626440689924884
+    second: SignalWave-sheet_28
+  - first:
+      213: -399143366084516966
+    second: SignalWave-sheet_29
+  - first:
+      213: 2659194387835329373
+    second: SignalWave-sheet_30
+  - first:
+      213: -6116902121796227156
+    second: SignalWave-sheet_31
+  - first:
+      213: -639827205972490593
+    second: SignalWave-sheet_32
+  - first:
+      213: -8372927074000857753
+    second: SignalWave-sheet_33
+  - first:
+      213: 7706884829733934340
+    second: SignalWave-sheet_34
+  - first:
+      213: 7160769113788491873
+    second: SignalWave-sheet_35
+  - first:
+      213: -5594552986206952130
+    second: SignalWave-sheet_36
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 16
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Win64
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: iOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: SignalWave-sheet_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dfa7ceed7aeb54660800000000000000
+      internalID: 7369505993470540541
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SignalWave-sheet_1
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a47228701dce87a00800000000000000
+      internalID: 754613320102848330
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SignalWave-sheet_2
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0dc7c1ff851780e10800000000000000
+      internalID: 2164104248002641104
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SignalWave-sheet_3
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c2d0dfaec28bed940800000000000000
+      internalID: 5322894312659029292
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: effe1273e662456439915b24fb00f800
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      SignalWave-sheet_0: 7369505993470540541
+      SignalWave-sheet_1: 754613320102848330
+      SignalWave-sheet_2: 2164104248002641104
+      SignalWave-sheet_3: 5322894312659029292
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
