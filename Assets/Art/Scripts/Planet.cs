@@ -9,14 +9,6 @@ public class Planet : MonoBehaviour
     {
         player = FindInactiveObjectByTag("Player").GetComponent<Player>();
         powerUpUI = FindInactiveObjectByTag("PowerUpUI");
-        if (powerUpUI != null)
-        {
-            powerUpUI.SetActive(false);
-        }
-        else
-        {
-            Debug.LogWarning("PowerUpUI not found in scene.");
-        }
     }
 
     public void OnTriggerEnter2D(Collider2D collision)

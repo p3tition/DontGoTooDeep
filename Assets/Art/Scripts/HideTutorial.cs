@@ -6,7 +6,6 @@ public class HideTutorial : MonoBehaviour
 
     public void HideTutorialUI()
     {
-        Debug.Log("Hide Tutorial UI");
         tutorialUI.SetActive(false);
     }
 }

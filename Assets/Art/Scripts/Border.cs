@@ -19,7 +19,6 @@ public class Border : MonoBehaviour
     {
         if (spriteRenderer != null && !isChanging)
         {
-            Debug.Log("START COROUTINE");
             colorChangeCoroutine = StartCoroutine(SmoothColorChange(targetColor));
         }
     }

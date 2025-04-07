@@ -70,7 +70,7 @@ public class Spawner : MonoBehaviour
                 return obj.prefab;
         }
 
-        return spawnables[0].prefab; // fallback
+        return spawnables[0].prefab;
     }
 
     private bool TooCloseToOthers(Vector3 pos)

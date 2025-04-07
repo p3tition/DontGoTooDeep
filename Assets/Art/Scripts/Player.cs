@@ -233,7 +233,6 @@ public class Player : MonoBehaviour
 
     public void ActivateShield()
     {
-        Debug.Log("SHIELD ACTIVATED");
         shield.SetActive(true);
         isShieldActivated = true;
     }
